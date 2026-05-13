@@ -16,13 +16,20 @@ calendarizada, modo claro/oscuro y una API REST para integraciones externas.
 ```bash
 sudo apt install \
     build-essential cmake \
-    qtbase5-dev qtdeclarative5-dev qttools5-dev-tools \
+    qtbase5-dev \
+    qtdeclarative5-dev \
+    qtquickcontrols2-5-dev \
+    qttools5-dev-tools \
     qml-module-qtquick-controls2 \
     qml-module-qtquick-layouts \
     qml-module-qtquick-window2 \
     qml-module-qt-labs-calendar \
     libqt5sql5-sqlite
 ```
+
+> `qtquickcontrols2-5-dev` aporta `Qt5QuickControls2Config.cmake` (necesario en
+> tiempo de compilación). `qml-module-qtquick-controls2` es el plugin QML que
+> se carga en runtime — ambos son necesarios.
 
 ## Compilación
 
