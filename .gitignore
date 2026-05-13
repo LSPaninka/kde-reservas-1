@@ -1,0 +1,11 @@
+build/
+build-*/
+*.user
+*.autosave
+CMakeLists.txt.user*
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+.vscode/
+.idea/
